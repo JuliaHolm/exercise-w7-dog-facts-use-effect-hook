@@ -1,1 +1,116 @@
 /* Start Adding your CSS here */
+:root {
+  --black: #313131;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin, padding, list styles and built-in form typography styles */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: inherit;
+}
+
+/* Workflow with images */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  color: var(--black);
+  font-family: "Josefin Sans", sans-serif;
+  background-image: url(/dog-background.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 4rem 2.5rem 0;
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+}
+
+.fact-text {
+  font-family: sans-serif;
+  max-width: 400px;
+  line-height: 1.5rem;
+}
+
+.btn-container {
+  margin-top: 3rem;
+}
+
+.btn {
+  padding: 0.8rem 1rem;
+  font-size: 0.8rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  border: 1px solid var(--black);
+}
+
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 1rem;
+  padding: 0 2rem;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.practice-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.github-link {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.github-icon {
+  width: 1.5rem;
+  color: var(--black);
+}
+
+@media (min-width: 668px) {
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+  .practice-name {
+    flex-direction: row;
+  }
+
+  .btn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+}
